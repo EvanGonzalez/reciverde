@@ -1,4 +1,61 @@
-body{
-    background-color: aqua;
-    
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+  color: #947b36;
+}
+
+.holy-grail header,
+.holy-grail footer,
+.hg-sidebar,
+.holy-grail-content {
+  padding: 20px;
+}
+
+.holy-grail header,
+.holy-grail footer {
+  background: #af9292;
+}
+
+.hg-sidebar {
+  background: rgb(49, 49, 111);
+}
+
+.holy-grail-content {
+  color: #9d2020;
+}
+
+.holy-grail {
+  min-height: 100vh;
+}
+
+.holy-grail,
+.holy-grail-body {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.holy-grail-content {
+  flex: 1 1 auto;
+}
+
+@media (min-width: 768px) {
+  .holy-grail-sidebar-1 {
+    order: -1;
+  }
+
+  .holy-grail-body {
+    flex-direction: row;
+  }
+
+  .hg-sidebar {
+    flex: 0 0 260px;
+  }
 }
