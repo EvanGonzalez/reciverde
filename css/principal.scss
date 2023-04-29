@@ -1,3 +1,8 @@
+@use 'menu';
+
+// varibales
+
+
 * {
   box-sizing: border-box;
 }
@@ -8,10 +13,10 @@ html, body {
   font-family: sans-serif;
   font-size: 1.1em;
   text-align: center;
-  color: #947b36;
+  color: #000000;
 }
 
-.holy-grail header,
+
 .holy-grail footer,
 .hg-sidebar,
 .holy-grail-content {
@@ -20,15 +25,15 @@ html, body {
 
 .holy-grail header,
 .holy-grail footer {
-  background: #af9292;
+  background: #ffffff;
 }
 
 .hg-sidebar {
-  background: rgb(49, 49, 111);
+  background: rgb(1, 1, 240);
 }
 
 .holy-grail-content {
-  color: #9d2020;
+  color: #000000;
 }
 
 .holy-grail {
