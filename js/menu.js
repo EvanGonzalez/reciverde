@@ -1,8 +1,14 @@
-// nav toggle - select button and links
-const navToggle = document.querySelector("#navToggle")
-const nav = document.querySelector("#nav-links")
+let hamburger = document.querySelector('.hamburger');
+let navLinks = document.getElementById('nav-links');
+let links = document.querySelectorAll('.links');
 
-// add event listener
-navToggle.addEventListener("click", () => {
-    nav.classList.toggle('nav-open')
-})
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('hide');
+  hamburger.classList.toggle('lines-rotate');
+});
+
+for (let i = 0; i < links.length; i++) {
+  links[i].addEventListener('click', () => {
+    navLinks.classList.toggle('hide');
+  });
+}
