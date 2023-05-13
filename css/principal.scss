@@ -1,5 +1,8 @@
 @use 'menu';
 @use 'cards';
+@use 'carruselinterfaz2';
+@use 'footer';
+@use 'interfaz2';
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
 // varibales
 
@@ -69,10 +72,13 @@ html, body {
 
 // css para inicio
 
+.contendorbaner{
+  margin-top: 20px;
+}
 .banner{
   width: 100%;
-  height: 89vh;
-  background-image: url(/img/masterpage-top-image-circles.png);
+  height: 69vh;
+  background-image: url(/img/masterpage-top-image-450.png);
   background-size: cover;
   background-position: 69%;
   position: relative;

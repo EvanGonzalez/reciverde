@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="/css/principal.css">
     <link rel="shortcut icon" href="/img/3_favICON-dark.svg" type="image/x-icon">
     
-    <title>Inicio</title>
+    <title>Contenedores Reciclaje</title>
 </head>
 
 <body>
     <?php
     include("../menu/menuprincipal.html");
-    include("./estructura.html");
+    include("../inicio/estructura4.html");
     include("../menu/footer.html");
     ?>
 
     <script src="/js/menu.js"></script>
-    <script serc="/js/cards.js"></script>
+
 </body>
 
 

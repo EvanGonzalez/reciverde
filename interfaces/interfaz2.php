@@ -6,20 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/principal.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="shortcut icon" href="/img/3_favICON-dark.svg" type="image/x-icon">
     
-    <title>Inicio</title>
+    <title>¿Que es el reciclaje?</title>
 </head>
 
 <body>
     <?php
     include("../menu/menuprincipal.html");
-    include("./estructura.html");
+    include("../inicio/estructurareciclaje.html");
     include("../menu/footer.html");
     ?>
 
     <script src="/js/menu.js"></script>
-    <script serc="/js/cards.js"></script>
+    <script src="/js/carruselinterfaz2.js"></script>
+    <script src="/js/interfazimagen2.js"></script>
+    
 </body>
 
 

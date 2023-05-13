@@ -388,6 +388,208 @@ a, a:hover {
     background-image: linear-gradient(80deg, rgba(189, 187, 73, 0.1), transparent 50%);
   }
 }
+.container2 {
+  margin-bottom: 70px;
+  margin-top: 20px;
+}
+
+.CarruselPrincipal {
+  box-shadow: 0 3px 20px #777;
+  box-sizing: border-box;
+  background-color: black;
+  width: 100%;
+  height: 76vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.itemCarrusel {
+  position: absolute;
+  height: 80vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 2000ms;
+}
+
+.itemCarrusel:nth-child(1) {
+  background-color: mediumpurple;
+}
+
+.itemCarrusel:nth-child(2) {
+  background-color: yellowgreen;
+}
+
+.itemCarrusel:nth-child(3) {
+  background-color: tomato;
+}
+
+.itemCarrusel:nth-child(4) {
+  background-color: aqua;
+}
+
+.itemCarrusel:nth-child(5) {
+  background-color: aqua;
+}
+
+.itemCarrusel > img {
+  height: 100%;
+  width: 100%;
+}
+
+.hideItemCarrusel {
+  z-index: -1;
+  left: 1000px;
+}
+
+.position {
+  z-index: 5;
+}
+
+.animationImg {
+  animation: example 8s ease-out, blur 2s ease-in;
+}
+
+@-webkit-keyframes example {
+  from {
+    transform: scale(1.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes blur {
+  from {
+    filter: blur(5px);
+  }
+  to {
+    filter: blur(0px);
+  }
+}
+/*:::::Pie de Pagina*/
+.pie-pagina {
+  width: 100%;
+  background-color: #003333;
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img {
+  width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 .red-social a:hover {
+  color: aqua;
+}
+
+.pie-pagina .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.pie-pagina .grupo-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+}
+#circle-shape-example {
+  margin: 2rem;
+}
+
+#circle-shape-example .textoinferaz2 {
+  line-height: 1.8;
+  text-align: justify;
+}
+
+#circle-shape-example .curve {
+  width: 25%;
+  height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right: 2rem;
+  border-radius: 50%;
+  -webkit-shape-outside: circle();
+  shape-outside: circle();
+}
+
+div#inked-painted {
+  position: relative;
+  font-size: 0;
+  -ms-touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
+div#inked-painted img {
+  width: 100%;
+  height: auto;
+}
+
+div#colored {
+  background-image: url(/img/after.png);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  background-size: cover;
+}
+
+div#inked-painted:hover {
+  cursor: col-resize;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -447,10 +649,14 @@ html, body {
     flex: 0 0 260px;
   }
 }
+.contendorbaner {
+  margin-top: 20px;
+}
+
 .banner {
   width: 100%;
-  height: 89vh;
-  background-image: url(/img/masterpage-top-image-circles.png);
+  height: 69vh;
+  background-image: url(/img/masterpage-top-image-450.png);
   background-size: cover;
   background-position: 69%;
   position: relative;

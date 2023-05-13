@@ -1,0 +1,44 @@
+
+#circle-shape-example { 
+  margin: 2rem; 
+}
+#circle-shape-example .textoinferaz2 { 
+  line-height: 1.8; 
+  text-align: justify;
+}
+#circle-shape-example .curve { 
+  width: 25%; height: auto;
+  min-width: 150px;
+  float: left;
+  margin-right:2rem; 
+  border-radius: 50%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+
+
+
+// css para antes y despues
+
+div#inked-painted { 
+  position: relative; font-size: 0; 
+  -ms-touch-action: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+div#inked-painted img { 
+  width: 100%; height: auto; 
+}
+div#colored { 
+  background-image: url(/img/after.png);
+  position: absolute;
+  top: 0; left: 0; height: 100%;
+  width: 50%;
+  background-size: cover; 
+}
+div#inked-painted:hover {
+  cursor: col-resize; 
+}
+
+
+// final de css para antes y despues
