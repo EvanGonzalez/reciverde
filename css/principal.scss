@@ -3,6 +3,7 @@
 @use 'carruselinterfaz2';
 @use 'footer';
 @use 'interfaz2';
+@use 'cardsbasureros';
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
 // varibales
 
@@ -98,7 +99,7 @@ html, body {
 
 .banner-text h1{
   margin-left: 5px;
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 #btn{

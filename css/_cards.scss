@@ -14,7 +14,7 @@ $main-blue-rgb-015: rgba(0, 118, 189, 0.1) !default;
 
 
 .light {
-	background: #f3f5f7;
+	background: #ffffff;
 }
 
 a, a:hover {
@@ -71,10 +71,14 @@ a, a:hover {
   }
 
   .postcard__img {
-    max-height: 180px;
+    max-height: 177px;
     width: 100%;
     object-fit: cover;
     position: relative;
+  }
+
+  #modificacionimglogo{
+    height: 360px;
   }
 
   .postcard__img_link {
@@ -86,7 +90,7 @@ a, a:hover {
     height: 10px;
     margin: 10px 0;
     border-radius: 5px;
-    background-color: #424242;
+    background-color: #ffffff;
     transition: width 0.2s ease;
   }
 
@@ -158,7 +162,7 @@ a, a:hover {
     }
 
     .postcard__img {
-      max-width: 300px;
+      max-width: 450px;
       max-height: 100%;
       transition: transform 0.3s ease;
     }
