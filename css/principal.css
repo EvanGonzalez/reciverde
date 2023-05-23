@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap");
 nav {
   background-color: rgba(255, 255, 255, 0.9607843137);
@@ -152,7 +153,6 @@ a, a:hover {
 .postcard .postcard__img {
   max-height: 177px;
   width: 100%;
-  object-fit: cover;
   position: relative;
 }
 .postcard #modificacionimglogo {
@@ -508,6 +508,7 @@ a, a:hover {
 .pie-pagina .grupo-1 .box p {
   color: #efefef;
   margin-bottom: 10px;
+  text-align: justify;
 }
 
 .pie-pagina .grupo-1 .red-social a {
@@ -524,7 +525,7 @@ a, a:hover {
 }
 
 .pie-pagina .grupo-1 .red-social a:hover {
-  color: aqua;
+  color: rgb(25, 158, 10);
 }
 
 .pie-pagina .grupo-2 {
@@ -778,6 +779,14 @@ html, body {
   position: relative;
 }
 
+.banner2 {
+  text-align: center;
+}
+
+.banner-text2 {
+  margin-left: 50px;
+}
+
 .banner-text {
   padding-top: 100px;
   margin-left: 50px;
@@ -806,6 +815,96 @@ html, body {
   border-radius: 20px;
   border: none;
   cursor: pointer;
+}
+
+/*Boton de ir arriba*/
+/* GOTOP */
+.go-top-container {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width: 4.4rem;
+  height: 4.4rem;
+  z-index: -1;
+}
+
+.go-top-button {
+  width: 0rem;
+  height: 0rem;
+  background: #E5ecc1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #000000;
+  transition: 0.2s;
+}
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button {
+  animation: popup 0.3s ease-in-out;
+  width: 3.6rem;
+  height: 3.6rem;
+  z-index: 11;
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  50% {
+    width: 6rem;
+    height: 6rem;
+  }
+  100% {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+}
+.boton-flotante {
+  position: fixed;
+  width: 7.5rem;
+  height: 5.4rem;
+  bottom: 4rem; /* Ajusta la posición vertical */
+  left: 20px; /* Ajusta la posición horizontal */
+  background-color: #508731; /* Ajusta el color de fondo */
+  color: #ffffff; /* Ajusta el color del texto */
+  padding: 10px; /* Ajusta el espaciado interno */
+  border-radius: 50%; /* Ajusta la forma del botón (opcional) */
+  z-index: 999; /* Ajusta la capa z-index para que esté por encima de otros elementos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.boton-flotante img {
+  width: 40px; /* Ajusta el tamaño de la imagen */
+  margin-right: 5px; /* Ajusta el espacio entre la imagen y el texto */
+}
+
+.boton-flotante span {
+  font-size: 14px; /* Ajusta el tamaño del texto */
 }
 
 /*# sourceMappingURL=principal.css.map */

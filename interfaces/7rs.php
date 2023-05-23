@@ -15,11 +15,13 @@
     <?php
     include("../menu/menuprincipal.html");
     include("../inicio/estructura3.html");
+    include("../menu/botonup.html");
+    include("../menu/encuesta.html");
     include("../menu/footer.html");
     ?>
 
     <script src="/js/menu.js"></script>
-
+    <script src="/js/boton_up.js"></script>
 </body>
 
 

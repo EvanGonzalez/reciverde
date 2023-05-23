@@ -16,13 +16,15 @@
     <?php
     include("../menu/menuprincipal.html");
     include("../inicio/estructurareciclaje.html");
+    include("../menu/botonup.html");
+    include("../menu/encuesta.html");
     include("../menu/footer.html");
     ?>
 
     <script src="/js/menu.js"></script>
     <script src="/js/carruselinterfaz2.js"></script>
     <script src="/js/interfazimagen2.js"></script>
-    
+    <script src="/js/boton_up.js"></script>    
 </body>
 
 

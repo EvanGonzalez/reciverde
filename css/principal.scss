@@ -83,12 +83,20 @@ html, body {
 	height: 49vh;
   background-position: 87%;
   // background-size: cover;
-  
 	-o-object-fit: cover;
 	object-fit:cover;
   background-repeat: no-repeat;
   position: relative;
 }
+
+.banner2{
+ text-align: center; 
+}
+
+.banner-text2{
+  margin-left: 50px;
+}
+
 
 .banner-text{
   padding-top: 100px;
@@ -121,3 +129,107 @@ html, body {
 }
 
 
+// fin de banner
+
+
+/*Boton de ir arriba*/
+
+/* GOTOP */
+ 
+.go-top-container {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width: 4.4rem;
+  height: 4.4rem;
+  z-index: -1;
+}
+
+.go-top-button {
+  width: 0rem;
+  height: 0rem;
+  background: #E5ecc1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.go-top-button i {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: #000000;
+  transition: 0.2s;
+}
+
+.show {
+  z-index: 10;
+}
+
+.show .go-top-button {
+  animation: popup 0.3s ease-in-out;
+  width: 3.6rem;
+  height: 3.6rem;
+  z-index: 11;
+}
+
+.show i {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+  0% {
+      width: 0;
+      height: 0;
+  }
+  50% {
+      width: 6rem;
+      height: 6rem;
+  }
+  100% {
+      width: 3.6rem;
+      height: 3.6rem;
+  }
+}
+
+// fin de boton up
+
+
+// boton fijo
+.boton-flotante {
+  position: fixed;
+  width: 7.5rem;
+  height: 5.4rem;
+  bottom: 4rem; /* Ajusta la posición vertical */
+  left: 20px; /* Ajusta la posición horizontal */
+  background-color: #508731; /* Ajusta el color de fondo */
+  color: #ffffff; /* Ajusta el color del texto */
+  padding: 10px; /* Ajusta el espaciado interno */
+  border-radius: 50%; /* Ajusta la forma del botón (opcional) */
+  z-index: 999; /* Ajusta la capa z-index para que esté por encima de otros elementos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.boton-flotante img {
+  width: 40px; /* Ajusta el tamaño de la imagen */
+  margin-right: 5px; /* Ajusta el espacio entre la imagen y el texto */
+}
+
+.boton-flotante span {
+  font-size: 14px; /* Ajusta el tamaño del texto */
+}
+
+
+
+
+// fin de boton fijo

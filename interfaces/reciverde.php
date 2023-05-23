@@ -8,20 +8,19 @@
     <link rel="stylesheet" href="/css/principal.css">
     <link rel="shortcut icon" href="/img/3_favICON-dark.svg" type="image/x-icon">
     
-    <title>Inicio</title>
+    <title>ReciVerde</title>
 </head>
 
 <body>
     <?php
     include("../menu/menuprincipal.html");
-    include("./estructura.html");
+    include("../inicio/estructura6.html");
     include("../menu/botonup.html");
     include("../menu/encuesta.html");
     include("../menu/footer.html");
     ?>
 
     <script src="/js/menu.js"></script>
-    <script src="/js/cards.js"></script>
     <script src="/js/boton_up.js"></script>
 </body>
 
