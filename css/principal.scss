@@ -4,6 +4,7 @@
 @use 'footer';
 @use 'interfaz2';
 @use 'cardsbasureros';
+@use 'elreciclaje';
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
 // varibales
 
@@ -15,7 +16,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', sans-serif;
@@ -30,7 +32,7 @@ html, body {
   padding: 20px;
 }
 
-.holy-grail header{
+.holy-grail header {
   background: #ded7d7;
 }
 
@@ -73,46 +75,47 @@ html, body {
 
 // css para inicio
 
-.contendorbaner{
+.contendorbaner {
   margin-top: 20px;
 }
-.banner{
+
+.banner {
   background-image: url(/img/masterpage-top-image-450.png);
   max-width: 100%;
-	width: 100%;
-	height: 49vh;
+  width: 100%;
+  height: 49vh;
   background-position: 87%;
   // background-size: cover;
-	-o-object-fit: cover;
-	object-fit:cover;
+  -o-object-fit: cover;
+  object-fit: cover;
   background-repeat: no-repeat;
   position: relative;
 }
 
-.banner2{
- text-align: center; 
+.banner2 {
+  text-align: center;
 }
 
 
 
-.banner-text{
+.banner-text {
   padding-top: 100px;
   margin-left: 50px;
 }
 
-.banner-text .titulobanner1{
+.banner-text .titulobanner1 {
   letter-spacing: 10px;
   font-weight: bold;
   font-size: 2vw;
   margin-left: 30px;
 }
 
-.banner-text .titulobanner2{
+.banner-text .titulobanner2 {
   text-align: center;
   font-size: 3vw;
 }
 
-#btn{
+#btn {
   width: 130px;
   height: 45px;
   font-weight: bold;
@@ -132,7 +135,7 @@ html, body {
 /*Boton de ir arriba*/
 
 /* GOTOP */
- 
+
 .go-top-container {
   position: fixed;
   bottom: 4rem;
@@ -183,16 +186,18 @@ html, body {
 
 @keyframes popup {
   0% {
-      width: 0;
-      height: 0;
+    width: 0;
+    height: 0;
   }
+
   50% {
-      width: 6rem;
-      height: 6rem;
+    width: 6rem;
+    height: 6rem;
   }
+
   100% {
-      width: 3.6rem;
-      height: 3.6rem;
+    width: 3.6rem;
+    height: 3.6rem;
   }
 }
 
@@ -204,13 +209,20 @@ html, body {
   position: fixed;
   width: 7.5rem;
   height: 5.4rem;
-  bottom: 4rem; /* Ajusta la posición vertical */
-  left: 20px; /* Ajusta la posición horizontal */
-  background-color: #508731; /* Ajusta el color de fondo */
-  color: #ffffff; /* Ajusta el color del texto */
-  padding: 10px; /* Ajusta el espaciado interno */
-  border-radius: 50%; /* Ajusta la forma del botón (opcional) */
-  z-index: 999; /* Ajusta la capa z-index para que esté por encima de otros elementos */
+  bottom: 4rem;
+  /* Ajusta la posición vertical */
+  left: 20px;
+  /* Ajusta la posición horizontal */
+  background-color: #508731;
+  /* Ajusta el color de fondo */
+  color: #ffffff;
+  /* Ajusta el color del texto */
+  padding: 10px;
+  /* Ajusta el espaciado interno */
+  border-radius: 50%;
+  /* Ajusta la forma del botón (opcional) */
+  z-index: 999;
+  /* Ajusta la capa z-index para que esté por encima de otros elementos */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -218,12 +230,15 @@ html, body {
 }
 
 .boton-flotante img {
-  width: 40px; /* Ajusta el tamaño de la imagen */
-  margin-right: 5px; /* Ajusta el espacio entre la imagen y el texto */
+  width: 40px;
+  /* Ajusta el tamaño de la imagen */
+  margin-right: 5px;
+  /* Ajusta el espacio entre la imagen y el texto */
 }
 
 .boton-flotante span {
-  font-size: 14px; /* Ajusta el tamaño del texto */
+  font-size: 14px;
+  /* Ajusta el tamaño del texto */
 }
 
 
@@ -236,16 +251,16 @@ html, body {
 // css basico de texto 
 /* Estilo para pantallas grandes */
 .paragraph {
-  
   line-height: 1.5;
   text-align: justify;
-  line-height: 1.8; 
+  line-height: 1.8;
+  margin-top: 15px;
 }
 
 /* Estilo para pantallas medianas */
 @media only screen and (max-width: 768px) {
   .paragraph {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 1.4;
   }
 }
@@ -258,39 +273,39 @@ html, body {
   }
 }
 
-
-
-.tiluloh2{
+.tiluloh2 {
   text-align: center;
   margin-bottom: 15px;
   margin-top: 12px;
 }
 
 // listado
-.listado1 {
+#listado1 {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-.listado2 {
+#listado2 {
   background-color: #cfedac;
   padding: 10px;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
 }
 
-.listado2:hover {
+#listado2:hover {
   background-color: #ffffff;
   transform: translateX(10px);
 }
+
+
 
 
 // fin de listado
 
 
 // tarjeta inicio
-.container {
+.containerdiferente {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -298,8 +313,9 @@ html, body {
 
 .tarjeta {
   max-width: 100%;
+  width: 100%;
   object-fit: cover;
-  height: 400px;
+  height: 30rem;
   margin-right: 20px;
 }
 
@@ -312,7 +328,7 @@ html, body {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .tarjeta {
     height: 170px;
     width: 100%;
@@ -320,6 +336,7 @@ html, body {
     margin-bottom: 20px;
   }
 }
+
 // boton de conocer mas
 .learn-more-btn {
   display: inline-block;
@@ -339,32 +356,16 @@ html, body {
 }
 
 // fin de boton mas
-
-// listado animado
-.my-list {
-  list-style: none;
-  padding: 0;
+.contenedoresreciclaje {
+	max-width: 100%;
+	width: 50%;
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
 }
-
-.my-list li {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fade-in 0.5s ease-out forwards;
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-// fin de listado animado
-
 // fin de tarjeta
 // fin de css basico de texto
+
+
+
+
