@@ -93,9 +93,6 @@ html, body {
  text-align: center; 
 }
 
-.banner-text2{
-  margin-left: 50px;
-}
 
 
 .banner-text{
@@ -103,15 +100,15 @@ html, body {
   margin-left: 50px;
 }
 
-.banner-text h2{
+.banner-text .titulobanner1{
   letter-spacing: 10px;
   font-weight: bold;
   font-size: 2vw;
   margin-left: 30px;
 }
 
-.banner-text h1{
-  margin-left: 5px;
+.banner-text .titulobanner2{
+  text-align: center;
   font-size: 3vw;
 }
 
@@ -233,3 +230,141 @@ html, body {
 
 
 // fin de boton fijo
+
+
+
+// css basico de texto 
+/* Estilo para pantallas grandes */
+.paragraph {
+  
+  line-height: 1.5;
+  text-align: justify;
+  line-height: 1.8; 
+}
+
+/* Estilo para pantallas medianas */
+@media only screen and (max-width: 768px) {
+  .paragraph {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+/* Estilo para pantallas pequeñas */
+@media only screen and (max-width: 480px) {
+  .paragraph {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+}
+
+
+
+.tiluloh2{
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 12px;
+}
+
+// listado
+.listado1 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.listado2 {
+  background-color: #cfedac;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.listado2:hover {
+  background-color: #ffffff;
+  transform: translateX(10px);
+}
+
+
+// fin de listado
+
+
+// tarjeta inicio
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tarjeta {
+  max-width: 100%;
+  object-fit: cover;
+  height: 400px;
+  margin-right: 20px;
+}
+
+.text {
+  flex: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .tarjeta {
+    height: 170px;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+// boton de conocer mas
+.learn-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  background-color: #139100;
+  border-radius: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.learn-more-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+// fin de boton mas
+
+// listado animado
+.my-list {
+  list-style: none;
+  padding: 0;
+}
+
+.my-list li {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+// fin de listado animado
+
+// fin de tarjeta
+// fin de css basico de texto
