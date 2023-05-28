@@ -6,6 +6,7 @@ $b-r: 5px;
     display: flex;
     flex: 0 0 auto;
     background: #fff;
+    
     margin: 80px 0;
     border-radius: $b-r;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -13,7 +14,7 @@ $b-r: 5px;
 
 .card-pic-wrap {
     border-radius: $b-r 0 0 $b-r;
-    width: 300px;
+    width: 350px;
     flex: 0 0 auto;
     position: relative;
     
@@ -65,8 +66,8 @@ h3 {
 @media (max-width: 790px) {
 
     .wrap2 {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 30px;
+        margin-right: 120px;
     }
 
     .card2 {
@@ -89,3 +90,59 @@ h3 {
         padding: 2em 2em 1em;
     }
 }
+
+
+
+// textohover
+
+
+.contenedorTituloGrande{
+width:100%;
+//   height:50vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.perspective-text {
+    margin-top:30px;
+    color:black;
+    font-size: 70px;
+    font-weight: 400;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+  }
+  .perspective-line {
+    height:92px;/*should be less than font-size to create space only for just 1 text line*/
+    overflow: hidden;
+    position: relative;
+  }
+  .tituloletrero {
+    background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    background-size:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin: 0;
+    height: 92px; /*same height as of div to occupy full space by text*/
+    line-height:100px;/*to create space between 2nd line of same div*/
+    transition: all 0.5s ease-in-out;
+  }
+  /* skew both x and y axis for every odd line and only y axis for even line.
+   Now skewing will cause the line size to be out of proportion. 
+   We need to fix this by downscaling the odd lines and upscaling the even lines.*/
+  
+  
+  .perspective-text:hover p{
+    transform: translate(0, -92px);
+  } /*change it to .perspective-line:hover p{} for transition on single div on hover*/  
+  p {
+    transition: all 0.5s ease-in-out;
+  }
+
+
+// fin de textohover

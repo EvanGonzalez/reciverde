@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/principal.css">
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/cd33816f91.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/img/3_favICON-dark.svg" type="image/x-icon">
     
     <title>Contenedores Reciclaje</title>
@@ -22,6 +24,9 @@
 
     <script src="/js/menu.js"></script>
     <script src="/js/boton_up.js"></script>
+    <script src="/js/popup.js"></script>
+    
+
 </body>
 
 

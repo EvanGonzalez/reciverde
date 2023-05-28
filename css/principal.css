@@ -679,7 +679,7 @@ div#inked-painted:hover {
   text-decoration: none;
   background: hsl(var(--shadow-color));
   border-radius: 3px;
-  background-color: #0059ff;
+  background-color: #8cc63f;
 }
 
 @media screen and (max-width: 767.98px) {
@@ -713,7 +713,7 @@ div#inked-painted:hover {
 
 .card-pic-wrap {
   border-radius: 5px 0 0 5px;
-  width: 300px;
+  width: 350px;
   flex: 0 0 auto;
   position: relative;
 }
@@ -763,8 +763,8 @@ h3 {
 
 @media (max-width: 790px) {
   .wrap2 {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 30px;
+    margin-right: 120px;
   }
   .card2 {
     flex-direction: column;
@@ -781,6 +781,254 @@ h3 {
   }
   .card-content {
     padding: 2em 2em 1em;
+  }
+}
+.contenedorTituloGrande {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.perspective-text {
+  margin-top: 30px;
+  color: black;
+  font-size: 70px;
+  font-weight: 400;
+  letter-spacing: -2px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.perspective-line {
+  height: 92px; /*should be less than font-size to create space only for just 1 text line*/
+  overflow: hidden;
+  position: relative;
+}
+
+.tituloletrero {
+  background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin: 0;
+  height: 92px; /*same height as of div to occupy full space by text*/
+  line-height: 100px; /*to create space between 2nd line of same div*/
+  transition: all 0.5s ease-in-out;
+}
+
+/* skew both x and y axis for every odd line and only y axis for even line.
+ Now skewing will cause the line size to be out of proportion. 
+ We need to fix this by downscaling the odd lines and upscaling the even lines.*/
+.perspective-text:hover p {
+  transform: translate(0, -92px);
+} /*change it to .perspective-line:hover p{} for transition on single div on hover*/
+p {
+  transition: all 0.5s ease-in-out;
+}
+
+.texto {
+  margin: 30px auto;
+  width: 80%;
+}
+
+.texto p, h1 {
+  margin-bottom: 30px;
+}
+
+.texto p {
+  font-size: 20px;
+}
+
+.btn-abrir {
+  background: #0063a5;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+}
+
+/* VENTANA MODAL */
+.pop-up {
+  background: rgba(48, 48, 48, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.pop-up-wrap {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  max-width: 950px;
+  transform: scale(0.6);
+  opacity: 0;
+  transition: 0.3s ease all;
+  z-index: 9999;
+}
+
+.pop-up-title {
+  flex-basis: 0;
+  flex-grow: 1.5;
+  height: 460px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-image: url("/img/1_BASIC-vertical-white.svg");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pop-up-title::after {
+  content: "";
+  position: absolute;
+  background: rgba(139, 198, 63, 0.2117647059);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.pop-up-title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.subcription::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.pop-up-title h2,
+.pop-up-title p {
+  z-index: 10;
+  color: #fff;
+}
+
+.pop-up-title h2 {
+  font-family: "Chiller";
+  font-size: 80px;
+}
+
+.pop-up-title p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.subcription {
+  background: #fff;
+  flex-basis: 0;
+  flex-grow: 2;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.sub-content {
+  width: 75%;
+}
+
+.sub-content h2 {
+  font-weight: 500;
+  font-size: 40px;
+  color: #1F4068;
+  margin-bottom: 15px;
+}
+
+.sub-content p {
+  font-weight: 500;
+  color: #1bc59b;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.subs-email {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #ccc;
+  margin-bottom: 15px;
+}
+
+.subs-send {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #003333;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.25s ease background;
+}
+
+.subs-send:hover {
+  background: #1bc59b;
+}
+
+.line {
+  width: 100%;
+  height: 20px;
+  background: #39b54a;
+}
+
+#close {
+  position: absolute;
+  top: 40px;
+  right: 25px;
+  font-size: 25px;
+  color: #1bc59b;
+  cursor: pointer;
+}
+
+.pop-up.show {
+  visibility: visible;
+}
+
+.pop-up-wrap.show {
+  transform: scale(1);
+  opacity: 1;
+}
+
+@media only screen and (max-width: 980px) {
+  .pop-up-title {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .sub-content h2 {
+    font-size: 30px;
   }
 }
 * {
