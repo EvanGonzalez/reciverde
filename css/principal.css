@@ -1031,6 +1031,40 @@ p {
     font-size: 30px;
   }
 }
+.contenedor7r {
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+.bloque7erres {
+  position: relative;
+  height: 99vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.titulo7 {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+  z-index: 1;
+  font-size: 3em;
+  font-weight: 400;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1051,7 +1085,7 @@ body {
 .holy-grail header,
 .hg-sidebar,
 .holy-grail-content {
-  padding: 20px;
+  padding: 25px;
 }
 
 .holy-grail header {
@@ -1077,7 +1111,8 @@ body {
   flex-direction: column;
 }
 
-.holy-grail-content {
+.holy-grail-content,
+.contenidoparallax {
   flex: 1 1 auto;
 }
 

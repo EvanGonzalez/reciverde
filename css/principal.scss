@@ -6,6 +6,7 @@
 @use 'cardsbasureros';
 @use 'elreciclaje';
 @use 'popup';
+@use 'parallax';
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&display=swap');
 // varibales
 
@@ -30,7 +31,7 @@ body {
 .holy-grail header,
 .hg-sidebar,
 .holy-grail-content {
-  padding: 20px;
+  padding: 25px;
 }
 
 .holy-grail header {
@@ -56,7 +57,8 @@ body {
   flex-direction: column;
 }
 
-.holy-grail-content {
+.holy-grail-content,
+.contenidoparallax {
   flex: 1 1 auto;
 }
 
