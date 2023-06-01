@@ -58,8 +58,14 @@ body {
   flex-direction: column;
 }
 
-.holy-grail-content,
-.contenidoparallax {
+.holy-grail-cuerpo{
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+
+.holy-grail-content {
   flex: 1 1 auto;
 }
 
