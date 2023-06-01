@@ -1081,7 +1081,6 @@ p {
 }
 
 #parallax-world-of-ugg h3 {
-  font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 0;
   font-weight: 400;
@@ -1127,6 +1126,7 @@ p {
   padding: 60px;
   margin: 0 auto;
   text-align: center;
+  width: 100%;
 }
 
 #parallax-world-of-ugg .title h1 {
@@ -1221,6 +1221,51 @@ p {
   background-position: center center;
 }
 
+#parallax-world-of-ugg .parallax-five {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(/img/5.png);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#parallax-world-of-ugg .parallax-six {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(/img/6.png);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+#parallax-world-of-ugg .parallax-sevent {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-image: url(/img/7.png);
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 /* Extras */
 /**************************/
 #parallax-world-of-ugg .line-break {
@@ -1248,7 +1293,9 @@ p {
   #parallax-world-of-ugg .block {
     padding: 30px;
   }
-  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {
+  #parallax-world-of-ugg .parallax-one,
+  #parallax-world-of-ugg .parallax-two,
+  #parallax-world-of-ugg .parallax-three {
     padding-top: 100px;
     padding-bottom: 100px;
   }
