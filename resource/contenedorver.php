@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/cd33816f91.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/img/3_favICON-dark.svg" type="image/x-icon">
 
-    <title>Contenedores Reciclaje</title>
+    <title>Contenedor Verde</title>
 </head>
 
 <body class="holy-grail">
