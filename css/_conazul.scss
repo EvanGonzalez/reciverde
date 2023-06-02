@@ -1,0 +1,383 @@
+.contenedorverde {
+    display: block;
+    justify-content: center;
+    width: 100%;
+    padding: 100px;
+    color: #222;
+
+    .contenedorverde2 {
+        width: 100%;
+
+
+        header {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            max-width: 100%;
+            width: 100%;
+            height: 70vh;
+            background-position: 68%;
+            // background-size: cover;
+            -o-object-fit: cover;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            position: relative;
+
+
+            padding: 50px;
+            border-radius: 16px;
+            color: #003333;
+            // background-position: center;
+            // background-repeat: no-repeat;
+            // background-size: cover;
+
+            .upper-header {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 20px;
+
+                .mini-title {
+                    font-size: 1.125rem;
+                    font-weight: bold;
+                    letter-spacing: 0.4rem;
+                    text-transform: uppercase;
+                    opacity: 0.9;
+                }
+
+                .date-since {
+                    display: flex;
+                    align-items: center;
+                    opacity: 0.5;
+                    font-size: 0.875rem;
+
+                    .date-value {
+                        display: inline-block;
+                        padding-bottom: 2px;
+                    }
+
+                    svg {
+                        width: 20px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .lower-header {
+                padding-top: 50px;
+
+                .tags-container {
+                    display: flex;
+                    align-items: center;
+                    opacity: 0.75;
+                    margin-bottom: 12px;
+
+                    &>span:not(:nth-child(2))::before {
+                        content: ", ";
+                    }
+
+                    svg {
+                        width: 20px;
+                        margin-right: 10px;
+                    }
+
+                    span {
+                        font-size: 0.875rem;
+                    }
+                }
+
+                .title {
+                    margin: 20px 0;
+                    font-size: 3rem;
+                    font-weight: bold;
+                    opacity: 0.9;
+                }
+
+                .subtitle {
+                    width: 50%;
+                    margin-top: 10px;
+                    opacity: 0.75;
+                    line-height: 1.75;
+                }
+            }
+        }
+    }
+
+    .summary {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        padding: 30px 50px;
+        border-radius: 16px;
+        box-shadow: 0 0 0 1px #fefefe;
+
+        .summary-item {
+            width: 100%;
+            padding-right: 20px;
+
+            .item-title {
+                color: #999;
+            }
+
+            .item-text {
+                margin-top: 12px;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .main-article {
+        width: 100%;
+        margin-top: 50px;
+        padding-bottom: 50px;
+        line-height: 1.75;
+
+        h4 {
+            margin-top: 60px;
+            margin-bottom: 20px;
+            font-size: 1.25em;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #777;
+            font-size: 1.125em;
+            text-align: justify;
+        }
+
+        blockquote {
+            position: relative;
+            margin: 40px 0;
+            padding: 40px;
+            background-color: #f8f8f8;
+            border-radius: 16px;
+
+            &::before {
+                content: url("https://icons.craftwork.design/static/media/QuotesFill.f65b03951f44e212816420b00909f4df.svg");
+                position: absolute;
+                top: -10px;
+                left: -10px;
+                transform: scale(2);
+                opacity: 0.1;
+            }
+
+            &::after {
+                content: url("https://icons.craftwork.design/static/media/QuotesFill.f65b03951f44e212816420b00909f4df.svg");
+                position: absolute;
+                bottom: -10px;
+                right: -10px;
+                transform: scale(2) rotate(180deg);
+                opacity: 0.1;
+            }
+        }
+
+        .gallery {
+            display: grid;
+            gap: 20px;
+            grid-template-areas:
+                "img1 img1 img2 img3"
+                "img1 img1 img4 img5";
+            min-height: 400px;
+            margin-top: 40px;
+
+            .image-item {
+                min-height: 200px;
+                background-color: #eee;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                border-radius: 8px;
+                transition: 250ms;
+
+                &:hover {
+                    opacity: 0.9;
+                    cursor: pointer;
+                }
+            }
+
+            .image-1 {
+                grid-area: img1;
+            }
+
+            .image-2 {
+                grid-area: img2;
+            }
+
+            .image-3 {
+                grid-area: img3;
+            }
+
+            .image-4 {
+                grid-area: img4;
+            }
+
+            .image-5 {
+                grid-area: img5;
+            }
+
+            .gallery-mask {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                width: 100vw;
+                height: 100vh;
+                padding: 40px;
+                background-color: #22222288;
+                transition: 500ms;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    transition: 500ms;
+                }
+            }
+
+            .mask-off {
+                visibility: hidden;
+                background-color: #22222200;
+
+                img {
+                    visibility: hidden;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contenedorverde {
+        padding: 50px;
+
+        .contenedorverde2 header .lower-header .subtitle {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contenedorverde .contenedorverde2 {
+        header .lower-header .title {
+            word-break: break-all;
+        }
+
+        .summary {
+            flex-direction: column;
+
+            .summary-item:not(:last-child) {
+                padding-bottom: 30px;
+            }
+        }
+
+        .main-article {
+            .gallery {
+                grid-template-areas:
+                    "img1 img1"
+                    "img1 img1"
+                    "img2 img3"
+                    "img4 img5";
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .contenedorverde {
+        padding: 25px;
+    }
+
+    .contenedorverde .contenedorverde2 header .upper-header .date-since {
+        display: none;
+    }
+}
+
+
+
+
+
+// tarjetas css
+.contenedorazulsino {
+
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+
+/* CONTAINER FOR ALL CARDS */
+.cards-container {
+    width: 100%;
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80px;
+}
+
+/* ALL CARDS  */
+.flip-card {
+    width: 230px;
+    height: 230px;
+    border-radius: 20px;
+    perspective: 1000px;
+    
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card:hover {
+    cursor: pointer;
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* CONTENT STYLING */
+.flip-card-front,
+.flip-card-back {
+    display: grid;
+    place-items: center;
+}
+
+.flip-card-front {
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+
+.flip-card-back {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+    border-radius: 10px;
+}
+
+.flip-card-front img {
+    width: 90%;
+    background-size: cover;
+}
+
+
+
+/* End CSS */
+
