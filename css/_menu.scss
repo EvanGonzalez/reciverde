@@ -3,7 +3,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1700px;
+    // max-width: 1700px;
     gap: 40px;
     padding: 0px 50px;
     color: rgb(0, 0, 0);
@@ -37,7 +37,7 @@ nav ul {
 
 
 li a {
-    font-size: 1.1rem;
+    font-size: calc(0.2rem + 1vw);
     cursor: pointer;
     transition: 0.5s;
     color: rgb(0, 0, 0);
@@ -45,7 +45,7 @@ li a {
 }
 
 li a:hover {
-    color: #E5ecc1;
+    color: #39b54a;
    
     transition: 0.3s;
 }
@@ -99,6 +99,7 @@ li a:hover {
 
     li a {
         color: rgba(12, 11, 11, 0.836);
+        font-size: calc(0.5rem + 1vw);
     }
 
     li {
@@ -108,7 +109,7 @@ li a:hover {
 
     li a:hover {
         font-weight: bold;
-        color: #191e24;
+        color: #39b54a;
         border: none;
         letter-spacing: 3px;
     }
