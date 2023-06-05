@@ -31,7 +31,7 @@
 
             <div class="contenedorverde">
                 <article class="contenedorverde2">
-                    <header style="background-image: url('/img/plastic.svg');">
+                    <header class="headeramarillo" style="background-image: url('/img/plastic.svg');" >
                         <div class="upper-header">
                             <div class="mini-title">Artículo</div>
                         </div>
@@ -162,11 +162,11 @@
                                 </div>
                             </div>
                             <!-- ACCORDION-5 -->
-                           
+
                         </div>
 
                         <!-- fin de acordion -->
-                        
+
                         <div class="gallery">
                             <div class="gallery-mask mask-off">
                                 <img class="mask-image" src="" alt="" width="200">
@@ -181,7 +181,7 @@
                         <blockquote class="pullquote">Como ves, reciclar en el contenedor amarillo es muy fácil y muy útil. Solo tienes que fijarte bien en el tipo de envase que tienes entre manos y depositarlo en el lugar adecuado. Así estarás contribuyendo a cuidar el planeta y a ahorrar energía y recursos. ¡Anímate a reciclar más y mejor!</blockquote>
 
 
-                       
+
                     </section>
                 </article>
             </div>
