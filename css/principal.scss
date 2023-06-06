@@ -129,7 +129,21 @@ body {
   background-image: url(/img/reciverdetierra.png);
   max-width: 100%;
   width: 100%;
-  height: 65vh;
+  height: 50vh;
+  background-position: 87%;
+  // background-size: cover;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  
+}
+
+.banner4{
+  background-image: url(/img/panama.png);
+  max-width: 100%;
+  width: 100%;
+  height: 50vh;
   background-position: 87%;
   // background-size: cover;
   -o-object-fit: cover;

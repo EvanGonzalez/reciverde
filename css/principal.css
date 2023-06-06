@@ -2721,6 +2721,34 @@ p {
   margin-bottom: auto;
 }
 
+.capa {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin: auto;
+}
+
+.parrafo {
+  z-index: 1;
+  width: 100%;
+  padding: 20px 20px;
+  font-size: 15px;
+  font-size: calc(0.5rem + 0.9vw);
+  background: #fff;
+  box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.parrafo img {
+  width: 10%;
+  border-radius: 5px;
+  float: left;
+  margin-right: 15px;
+  background-color: #003333;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -2823,7 +2851,19 @@ body {
   background-image: url(/img/reciverdetierra.png);
   max-width: 100%;
   width: 100%;
-  height: 65vh;
+  height: 50vh;
+  background-position: 87%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.banner4 {
+  background-image: url(/img/panama.png);
+  max-width: 100%;
+  width: 100%;
+  height: 50vh;
   background-position: 87%;
   -o-object-fit: cover;
   object-fit: cover;
