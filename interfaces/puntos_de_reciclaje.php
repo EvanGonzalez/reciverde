@@ -16,7 +16,7 @@
     include("../menu/menuprincipal.html");
     include("../inicio/estructura5.html");
     include("../menu/botonup.html");
-    include("../menu/encuesta.html");
+    
     include("../menu/footer.html");
     ?>
 

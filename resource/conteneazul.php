@@ -44,7 +44,7 @@
                     </header>
 
                     <section class="main-article">
-                        <h4>You Gotta Love Birds</h4>
+                       
                         <p>El contenedor azul de reciclaje es el que se utiliza para recoger los envases de papel y cartón, como revistas, folletos, periódicos, cajas de zapatos, hueveras y demás objetos. Estos residuos se pueden reciclar y reutilizar para la fabricación de nuevos productos de papel y cartón, como libros, papel higiénico, servilletas o cajas de embalaje.</p>
                         <p>Reciclar papel y cartón tiene muchas ventajas para el planeta, ya que se evita la tala de árboles, se ahorra agua y energía, se reduce la emisión de gases de efecto invernadero y se disminuye la cantidad de basura que va a los vertederos. Según datos de Ecovidrio, reciclando una tonelada de papel se salvan 17 árboles y se disminuye el consumo de agua en un 80%. Además, con solo 8 cajas de cartón de cereales se puede hacer un libro.</p>
                         <p>Para reciclar el vidrio correctamente, hay que seguir unas pautas sencillas. Lo primero es separar las tapas y los tapones de los envases de vidrio y tirarlos al contenedor amarillo, donde se reciclan los plásticos y los metales. Lo segundo es limpiar los envases de vidrio para eliminar los restos de líquidos o alimentos que puedan tener. Lo tercero es depositarlos en el contenedor verde, sin bolsas ni otros objetos que no sean de vidrio.</p>

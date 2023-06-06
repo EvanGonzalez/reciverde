@@ -33,7 +33,7 @@
                 <article class="contenedorverde2">
                     <header style="background-image: url('/img/bottle.svg');">
                         <div class="upper-header">
-                            <div class="mini-title">article</div>
+                            <div class="mini-title">Artículo</div>
                         </div>
                         <div class="lower-header">
                             <div class="tags-container">
@@ -44,7 +44,7 @@
                     </header>
 
                     <section class="main-article">
-                        <h4>You Gotta Love Birds</h4>
+                       
                         <p>El contenedor verde de reciclaje es el que se utiliza para recoger los envases de vidrio, como botellas, frascos, tarros y botes. El vidrio es un material que se puede reciclar al 100% y que no pierde sus propiedades por mucho que se reutilice. De hecho, el vidrio es uno de los materiales más antiguos que se conocen y se ha usado desde hace miles de años para fabricar objetos de todo tipo.</p>
                         <p>El reciclaje de vidrio tiene muchas ventajas para el planeta y para nosotros. Al reciclar una tonelada de vidrio se ahorran 130 kilos de combustible y 1.200 kilos de materia prima. Además, se reduce la contaminación atmosférica en un 20% y la contaminación del agua en un 50%. También se ahorra energía, ya que el vidrio reciclado necesita menos temperatura para fundirse que el vidrio nuevo. Por ejemplo, con una botella de vidrio reciclada se puede tener un televisor encendido durante tres horas.</p>
                         <p>Para reciclar el vidrio correctamente, hay que seguir unas pautas sencillas. Lo primero es separar las tapas y los tapones de los envases de vidrio y tirarlos al contenedor amarillo, donde se reciclan los plásticos y los metales. Lo segundo es limpiar los envases de vidrio para eliminar los restos de líquidos o alimentos que puedan tener. Lo tercero es depositarlos en el contenedor verde, sin bolsas ni otros objetos que no sean de vidrio.</p>

@@ -1,44 +1,35 @@
-$(document).ready(function(){
-    $('.owl-carousel').owlCarousel({
-      nav: false,
-      dots: true,
-      loop: true,
-      autoplay: true,
-      autoplayTimeout: 5000,
-      margin: 20,
-      slideSpeed: 3000,
-      animateIn: 'fadeIn',
-      animateOut: 'fadeOut',
-      responsive: {
-          0:{
-              items: 1
-          },
-          600:{
-              items: 2
-          },
-          960: {
-              items: 3
-          }
-      }
-  });
-      
-      
-      
-  
-  var setMinHeight = function(minheight = 0) {
-    jQuery('.owl-carousel').each(function(i,e){
-      var oldminheight = minheight;
-      jQuery(e).find('.owl-item').each(function(i,e){
-        minheight = jQuery(e).height() > minheight ? jQuery(e).height() : minheight;    
-      });
-      jQuery(e).find('.item').css("min-height",minheight + "px");
-      minheight = oldminheight;
-    });
-  };
-  
-      setMinHeight();
-  });
-  
-  $(document).on('resize', function(){
-          setMinHeight();
-  });
+var timer = 3000;
+
+var i = 0;
+var max = $('#c > li').length;
+ 
+	$("#c > li").eq(i).addClass('active').css('left','0');
+	$("#c > li").eq(i + 1).addClass('active').css('left','25%');
+	$("#c > li").eq(i + 2).addClass('active').css('left','50%');
+	$("#c > li").eq(i + 3).addClass('active').css('left','75%');
+ 
+
+	setInterval(function(){ 
+
+		$("#c > li").removeClass('active');
+
+		$("#c > li").eq(i).css('transition-delay','0.25s');
+		$("#c > li").eq(i + 1).css('transition-delay','0.5s');
+		$("#c > li").eq(i + 2).css('transition-delay','0.75s');
+		$("#c > li").eq(i + 3).css('transition-delay','1s');
+
+		if (i < max-4) {
+			i = i+4; 
+		}
+
+		else { 
+			i = 0; 
+		}  
+
+		$("#c > li").eq(i).css('left','0').addClass('active').css('transition-delay','1.25s');
+		$("#c > li").eq(i + 1).css('left','25%').addClass('active').css('transition-delay','1.5s');
+		$("#c > li").eq(i + 2).css('left','50%').addClass('active').css('transition-delay','1.75s');
+		$("#c > li").eq(i + 3).css('left','75%').addClass('active').css('transition-delay','2s');
+	
+	}, timer);
+ 

@@ -44,7 +44,7 @@
                     </header>
 
                     <section class="main-article">
-                        <h4>You Gotta Love Birds</h4>
+                       
                         <p>En este artículo te vamos a explicar todo lo que necesitas saber sobre el contenedor amarillo: qué se puede tirar y qué no, cómo se recicla lo que depositamos en él y algunos datos curiosos que quizás no conocías. ¡Sigue leyendo y aprende a reciclar mejor!</p>
 
                         <!-- acordion -->

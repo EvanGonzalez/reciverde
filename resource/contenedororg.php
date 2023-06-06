@@ -44,7 +44,7 @@
                     </header>
 
                     <section class="main-article">
-                        <h4>You Gotta Love Birds</h4>
+                       
                         <p>El contenedor marrón es el encargado de recoger los residuos orgánicos, es decir, todos los residuos de origen animal o vegetal que se generan en tu hogar, como restos de comida, cáscaras de fruta, servilletas usadas o flores marchitas. Estos residuos se transportan a una planta de compostaje, donde se transforman en compost, un abono natural y ecológico que se puede usar para fertilizar el suelo y las plantas.</p>
                         <p>El compostaje es un proceso natural que imita el ciclo de la vida, donde la materia orgánica se descompone con la ayuda de microorganismos y oxígeno. El resultado es un producto rico en nutrientes y humus, que mejora las propiedades físicas, químicas y biológicas del suelo. Además, el compostaje evita que los residuos orgánicos acaben en el vertedero, donde generan gases de efecto invernadero y contaminan el medio ambiente.</p>
 

@@ -26,7 +26,7 @@
             text-align: justify;
             padding: 50px;
             border-radius: 16px;
-            color: #003333;
+            color: #000000;
             // background-position: center;
             // background-repeat: no-repeat;
             // background-size: cover;
@@ -152,6 +152,7 @@
             padding: 40px;
             background-color: #f8f8f8;
             border-radius: 16px;
+            text-align: justify;
 
             &::before {
                 content: url("https://icons.craftwork.design/static/media/QuotesFill.f65b03951f44e212816420b00909f4df.svg");

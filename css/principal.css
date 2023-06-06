@@ -818,9 +818,11 @@ h3 {
 .botonreciclaje {
   background: #8dc26f;
   color: #fff;
+  text-align: center;
+  width: 40%;
   padding: 0 25px;
   height: 50px;
-  font-size: 0.8em;
+  font-size: calc(0.3rem + 1vw);
   letter-spacing: 1px;
   line-height: 50px;
   display: inline-block;
@@ -835,10 +837,6 @@ h3 {
 }
 
 @media (max-width: 790px) {
-  .wrap2 {
-    margin-left: 30px;
-    margin-right: 120px;
-  }
   .card2 {
     flex-direction: column;
     margin-top: 50px;
@@ -849,7 +847,6 @@ h3 {
     border-radius: 5px 5px 0 0;
   }
   .card-pic-wrap img {
-    bottom: 20px;
     position: relative;
   }
   .card-content {
@@ -867,7 +864,7 @@ h3 {
 .perspective-text {
   margin-top: 30px;
   color: black;
-  font-size: 70px;
+  font-size: calc(1rem + 2vw);
   font-weight: 400;
   letter-spacing: -2px;
   text-transform: uppercase;
@@ -876,7 +873,8 @@ h3 {
 }
 
 .perspective-line {
-  height: 92px; /*should be less than font-size to create space only for just 1 text line*/
+  height: 92px;
+  /*should be less than font-size to create space only for just 1 text line*/
   overflow: hidden;
   position: relative;
 }
@@ -890,17 +888,21 @@ h3 {
   -webkit-text-fill-color: transparent;
   text-align: center;
   margin: 0;
-  height: 92px; /*same height as of div to occupy full space by text*/
-  line-height: 100px; /*to create space between 2nd line of same div*/
+  height: 92px;
+  /*same height as of div to occupy full space by text*/
+  line-height: 100px;
+  /*to create space between 2nd line of same div*/
   transition: all 0.5s ease-in-out;
 }
 
 /* skew both x and y axis for every odd line and only y axis for even line.
- Now skewing will cause the line size to be out of proportion. 
- We need to fix this by downscaling the odd lines and upscaling the even lines.*/
+   Now skewing will cause the line size to be out of proportion. 
+   We need to fix this by downscaling the odd lines and upscaling the even lines.*/
 .perspective-text:hover p {
   transform: translate(0, -92px);
-} /*change it to .perspective-line:hover p{} for transition on single div on hover*/
+}
+
+/*change it to .perspective-line:hover p{} for transition on single div on hover*/
 p {
   transition: all 0.5s ease-in-out;
 }
@@ -1399,7 +1401,7 @@ p {
   text-align: justify;
   padding: 50px;
   border-radius: 16px;
-  color: #003333;
+  color: #000000;
 }
 .contenedorverde .contenedorverde2 header .upper-header {
   display: flex;
@@ -1502,6 +1504,7 @@ p {
   padding: 40px;
   background-color: #f8f8f8;
   border-radius: 16px;
+  text-align: justify;
 }
 .contenedorverde .main-article blockquote::before {
   content: url("https://icons.craftwork.design/static/media/QuotesFill.f65b03951f44e212816420b00909f4df.svg");
@@ -1737,6 +1740,7 @@ p {
   padding: 40px;
   background-color: #f8f8f8;
   border-radius: 16px;
+  text-align: justify;
 }
 .contenedororga .main-article blockquote::before {
   content: url("https://icons.craftwork.design/static/media/QuotesFill.f65b03951f44e212816420b00909f4df.svg");
@@ -1869,7 +1873,7 @@ p {
   position: relative;
   padding: 50px;
   border-radius: 16px;
-  color: #003333;
+  color: #000000;
 }
 .contenedorverde .contenedorverde2 header .upper-header {
   display: flex;
@@ -2284,6 +2288,7 @@ p {
   padding: 40px;
   background-color: #f8f8f8;
   border-radius: 16px;
+  text-align: justify;
 }
 .contenedorverde .main-article blockquote::before {
   content: url("https://icons.craftwork.design/static/media/QuotesFill.f65b03951f44e212816420b00909f4df.svg");
@@ -2602,6 +2607,7 @@ p {
   padding: 40px;
   background-color: #f8f8f8;
   border-radius: 16px;
+  text-align: justify;
 }
 .contenedorgris .main-article blockquote::before {
   content: url("https://icons.craftwork.design/static/media/QuotesFill.f65b03951f44e212816420b00909f4df.svg");
@@ -2710,77 +2716,9 @@ p {
     display: none;
   }
 }
-/* Bubble Slider */
-section.row.testimonials {
-  background-color: #6b4476;
-  padding: 20px;
-  box-sizing: border-box;
-}
-section.row.testimonials .owl-carousel {
-  width: 100%;
-  cursor: move;
-}
-section.row.testimonials .owl-carousel .item {
-  text-align: center;
-  font-family: "Lato", sans-serif;
-  padding: 30px;
-  box-sizing: border-box;
-  background-color: #ffffff;
-  transition: 0.3s all linear;
-}
-section.row.testimonials .owl-carousel .item:hover {
-  background-color: #885796;
-}
-section.row.testimonials .owl-carousel .item:hover h3, section.row.testimonials .owl-carousel .item:hover p {
-  color: #ffffff;
-}
-section.row.testimonials .owl-carousel .item:hover img {
-  border: 3px solid white;
-  box-sizing: border-box;
-}
-section.row.testimonials .owl-carousel .item h3 {
-  color: #6b4476;
-}
-section.row.testimonials .owl-carousel .item p {
-  color: #777777;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 100;
-  font-size: 13 px;
-}
-section.row.testimonials .owl-carousel .item img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin: 0 auto 30px;
-  transition: 0.3s border linear;
-}
-section.row.testimonials h2 {
-  color: #ffffff;
-  font-weight: normal;
-  text-transform: uppercase;
-  font-size: 33px;
-  letter-spacing: 0.1em;
-  font-family: "Lato", sans-serif;
-  text-align: center;
-  margin-bottom: 40px;
-}
-section.row.testimonials .owl-dots {
-  margin: 20px auto 0; /*for centering the dots*/
-  text-align: center;
-}
-section.row.testimonials .owl-dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  background-color: #885796;
-  margin-right: 5px;
-  display: inline-block;
-}
-section.row.testimonials .owl-dot.active {
-  background: #ffffff;
-}
-section.row.testimonials .owl-dots.disabled {
-  display: block !important;
+.mapacontent {
+  height: 650px;
+  margin-bottom: auto;
 }
 
 * {
@@ -2795,7 +2733,7 @@ body {
   padding: 0;
   font-family: "Lato", sans-serif;
   font-size: 1.1em;
-  cursor: url("/img/3_favICON-dark.svg"), auto;
+  cursor: url("/img/Cursor.svg"), auto;
   color: #000000;
 }
 
