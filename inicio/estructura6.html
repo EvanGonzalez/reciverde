@@ -10,11 +10,145 @@
     <section class="holy-grail-content">
       <!-- inicio de tarjetas -->
 
-      
+      <section class="seccion">
+        <div class="contenedorreci">
+          <h1 class="titulo-principal">Hola, soy <span>ReciVerde</span></h1>
+          <br><br><br><br>
+          <div class="textoverde">
+            <p class="texto-principal">
+              <span>"Reci"</span> es una abreviatura o acrónimo de <span>"reciclaje"</span> y <span>"Verde"</span>  se refiere a la sostenibilidad y la ecología.
+              Juntos, <span>"ReciVerde"</span>  representar la idea de un enfoque sostenible hacia el reciclaje.
+            </p>
+          </div>
+         
+        </div>
+        <div class="contenedor-imagenes">
+          <img class="imagenreci" src="/img/hero-bot.svg" />
+
+        </div>
+      </section>
+
+      <section class="seccion seccion-secundaria">
+        <div class="contenedorreci">
+          <h2 class="titulo-secundario"><span>Quienes</span> somos:</h2>
+        </div>
+        <br>
+        <div class="contenedor-imagenes">
+          <p class="texto-secundario"> En ReciVerde, Creemos en un futuro sostenible y estamos comprometidos con el
+            cuidado del medio ambiente. Somos un grupo de estudiantes de la Universidad Tecnológica de Panamá de la
+            provincia de Coclé. Buscamos fomentar y promocionar el reciclaje en Panamá. <br>
+            <br>
+            Nuestro equipo está conformado por estudiantes responsables por el futuro del país con mucha iniciativa en
+            poder colaborar al cuidado de nuestros preciados recursos naturales.
+            Nos enfocamos en educar y concientizar a la población sobre la importancia del reciclaje y cómo cada
+            individuo puede marcar la diferencia. <br>
+            <br>
+            Únete a nosotros en nuestra misión de construir un futuro más verde y sostenible. Juntos, podemos marcar la
+            diferencia y crear un impacto positivo en nuestro entorno.
+          </p>
+        </div>
+      </section>
+<!-- 
+      <section class="seccion">
+        <h2 class="titulo-secundario">Hablemos!</h2>
+        <p class="texto-secundario">Si tenés una propuesta para acercarme, ¡escribíme! Me encuentro buscando nuevos
+          desafíos</p>
+        <a target="_blank" href="https://www.linkedin.com">
+          <img src="https://cx5v8.csb.app/iconos/linkedin.svg" />
+        </a>
+      </section> -->
+
+      <section class="seccion">
+        <article class="flow">
+          <h1>Our Team</h1>
+          <p>Hover or focus over each card to see the person’s job title slide in and the colour treatment change.</p>
+          <div class="team">
+            <ul class="auto-grid" role="list">
+              <li>
+                <a href="https://swop.link/cool" target=_blank" class="profile">
+                  <h2 class="profile__name">Anita Simmons</h2>
+                  <p>Founder</p>
+                  <img alt="Anita Simmons" src="https://source.unsplash.com/BhcutpohYwg/800x800" />
+                </a>
+              </li>
+              <li>
+                <a href="https://swop.link/cool" target=_blank" class="profile">
+                  <h2 class="profile__name">Celina Harris</h2>
+                  <p>Creative Director</p>
+                  <img alt="Profile shot for Celina Harris" src="https://source.unsplash.com/j5KAuRrYX7g/800x800" />
+                </a>
+              </li>
+              <li>
+                <a href="https://swop.link/cool" target=_blank" class="profile">
+                  <h2 class="profile__name">Ruby Morris</h2>
+                  <p>Technical Lead</p>
+                  <img alt="Profile shot for Ruby Morris" src="https://source.unsplash.com/pQyIutdScOY/800x800" />
+                </a>
+              </li>
+              <li>
+                <a href="https://swop.link/cool" target=_blank" class="profile">
+                  <h2 class="profile__name">Nicholas Castro</h2>
+                  <p>Designer</p>
+                  <img alt="Profile shot for Nicholas Castro" src="https://source.unsplash.com/55JRsxcAiWE/800x800" />
+                </a>
+              </li>
+              <li>
+                <a href="https://swop.link/cool" target=_blank" class="profile">
+                  <h2 class="profile__name">Marc Dixon</h2>
+                  <p>Developer</p>
+                  <img alt="Profile shot for Marc Dixon" src="https://source.unsplash.com/5wn6DeAEcmE/800x800" />
+                </a>
+              </li>
+              <li>
+                <a href="https://swop.link/cool" target=_blank" class="profile">
+                  <h2 class="profile__name">Chad Chadson</h2>
+                  <p>Intern</p>
+                  <img alt="Profile shot for Chad" src="https://source.unsplash.com/7jCYw6a2Wao/800x800" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
 
 
 
-      <!-- fin de tarjetas -->
+      <!-- formulario -->
+      <section class="seccion2"> 
+        <div class="contenedorreci">
+          <h2 class="titulo-secundario"><span>ENVÍANOS</span> TU SUGERENCIA</h2>
+        </div>
+        <div id="form-main">
+          <div id="form-div">
+            <form class="form" action="https://formsubmit.co/0c387029299553f998f4b2a221abf938 " id="form1" method="POST">
+              
+              <p class="name">
+                <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nombre" id="name" required />
+              </p>
+              
+              <p class="email">
+                <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" required />
+              </p>
+              
+              <p class="text">
+                <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="Comentario"></textarea>
+              </p>
+              
+              
+              <div class="submit">
+                <button type="submit" id="button-blue">Envíar</button>
+                
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="http://localhost:3000/interfaces/reciverde.php">
+                <div class="ease"></div>
+              </div>
+            </form>
+          </div>
+      </section>
+     
+
+        <!-- fin de formulario -->
+     
 
     </section>
 
