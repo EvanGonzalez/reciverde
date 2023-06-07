@@ -3328,8 +3328,17 @@ body {
   font-size: calc(0.5rem + 0.9vw);
 }
 
+.banner-textmejora {
+  padding-top: 100px;
+  margin-left: 40px;
+  font-size: calc(0.4rem + 0.7vw);
+}
+
 @media (min-width: 200rem) {
   .banner-text {
+    font-size: 3rem;
+  }
+  .banner-textmejora {
     font-size: 3rem;
   }
 }

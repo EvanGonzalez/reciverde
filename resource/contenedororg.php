@@ -118,7 +118,7 @@
                         <!-- inicio de composta -->
                         <center>
 
-                            <h2 class="titulo-secundario"><span>Como</span>  realizar una composta casera para las plantas</h2>
+                            <h2 class="titulo-secundario"><span>Como</span>  realizar un compost casero</h2>
                         </center>
                         <div class="contenedorcompost">
 
@@ -147,7 +147,7 @@
 
                                     <div class="fade">
                                         <a href="#" onclick="return false" class="border-text">
-                                        3.	Se agrega 2kilos de cascara de plátanos u otro residuo orgánico.
+                                        3.	Se agrega 2 a 4 libras de residuos orgánico.
                                         </a>
                                     </div>
                                 </div>
@@ -157,7 +157,7 @@
 
                                     <div class="fade">
                                         <a href="#" onclick="return false" class="border-text">
-                                        4.	Se procede a agregar 1 o 2 libra de tierra arriba de las cascaras de plátano.
+                                        4.	Se procede a agregar 1 o 2 libras de tierra arriba de los residuos orgánicos.
                                         </a>
                                     </div>
                                 </div>
@@ -167,7 +167,7 @@
 
                                     <div class="fade">
                                         <a href="#" onclick="return false" class="border-text">
-                                        5.	Agrega el residuo del café utilizado y deposítalo en una bolsa y déjalo secar al sol para evitar hongos. Este se agrega dentro del tanque junto con la tierra anterior.
+                                        5.	Puedes agregar el residuo del café utilizado y depositarlo en una bolsa y dejarlo secar al sol para evitar hongos. Este se agrega dentro del tanque junto con la tierra anterior.
                                         </a>
                                     </div>
                                 </div>
