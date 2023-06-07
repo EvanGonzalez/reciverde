@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/principal.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="shortcut icon" href="/img/3_favICON-dark.svg" type="image/x-icon">
-    
+    <script src="/js/scrollreveal.js"></script>
     <title>¿Que es el reciclaje?</title>
 </head>
 
@@ -17,7 +17,7 @@
     include("../menu/menuprincipal.html");
     include("../inicio/estructurareciclaje.html");
     include("../menu/botonup.html");
-    include("../menu/encuesta.html");
+    
     include("../menu/footer.html");
     ?>
 
@@ -25,6 +25,7 @@
     <script src="/js/carruselinterfaz2.js"></script>
     <script src="/js/interfazimagen2.js"></script>
     <script src="/js/boton_up.js"></script>    
+    <script src="/js/scrollanimation.js"></script>
 </body>
 
 

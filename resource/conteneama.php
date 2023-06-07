@@ -9,7 +9,7 @@
     <script src="/js/jquery-3.5.1.min.js"></script>
     <script src="https://kit.fontawesome.com/cd33816f91.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/img/3_favICON-dark.svg" type="image/x-icon">
-
+    <script src="/js/scrollreveal.js"></script>
     <title>Contenedor Amarillo</title>
 </head>
 
@@ -39,7 +39,7 @@
                             <div class="tags-container">
                             </div>
                             <h1 class="title">Contenedor Amarillo</h1>
-                            <p class="subtitle">¿Sabes qué se recicla en el contenedor amarillo? El contenedor amarillo es uno de los más importantes para el cuidado del medio ambiente, ya que en él se depositan los envases de plástico, metal y briks que consumimos a diario. Estos materiales pueden tener una segunda vida si los reciclamos correctamente, evitando así la generación de más residuos y el agotamiento de los recursos naturales.</p>
+                            <p class="subtitle">¿Sabes qué se recicla en el contenedor amarillo? El contenedor amarillo es uno de los más importantes para el cuidado del medio ambiente, ya que en él se depositan los envases de plástico, metal y Tetra brik que consumimos a diario. Estos materiales pueden tener una segunda vida si los reciclamos correctamente, evitando así la generación de más residuos y el agotamiento de los recursos naturales.</p>
                         </div>
                     </header>
 
@@ -73,9 +73,9 @@
                                         <br><br>
                                         - Bolsas de plástico de supermercado, panadería, frutería, etc. (excepto las bolsas de basura).
                                         <br><br>
-                                        - Tarrinas y tapas de yogur, queso fresco, mantequilla, helado, etc.
+                                        - envase de plastico y tapas de yogur, queso fresco, mantequilla, helado, etc.
                                         <br><br>
-                                        - Briks de leche, zumo, caldo, nata, tomate frito, etc.
+                                        - Tetra brik de leche, jugo, caldo, nata, tomate frito, etc.
                                         <br><br>
                                         - Tubos de pasta de dientes, crema facial o corporal, pegamento, etc.
                                         <br><br>
@@ -108,7 +108,7 @@
                                         <br><br>
                                         - Monederos y carteras (estos deben ir al contenedor gris o donarse si están en buen estado).
                                         <br><br>
-                                        - Bolígrafos, sacapuntas o mecheros (estos deben ir al contenedor gris).
+                                        - Bolígrafos, sacapuntas o encendedor (estos deben ir al contenedor gris).
                                         <br><br>
                                         - Materiales de plástico que formen parte de cuadros o fotografías (estos deben ir al contenedor gris o reutilizarse si están en buen estado).
                                         <br><br>
@@ -146,7 +146,7 @@
                                         <br><br>
                                         - Con 40 botellas de plástico se puede hacer un forro polar.
                                         <br>
-                                        - Con 6 briks se puede hacer una caja de zapatos.
+                                        - Con 6 Tetra brik se puede hacer una caja de zapatos.
                                         <br>
                                         - Con 80 latas se puede hacer una llanta de bicicleta.
                                         <br>
@@ -174,8 +174,8 @@
                             <div class="image-item image-1" alt="" width="200" style="background-image: url('/img/amarillo1.0.jpg');"></div>
                             <div class="image-item image-2" alt="" width="200" style="background-image: url('/img/amarillo1.2.jpg');"></div>
                             <div class="image-item image-3" alt="" width="200" style="background-image: url('/img/amarillo1.3.jpg');"></div>
-                            <div class="image-item image-4" alt="" width="200" style="background-image: url('/img/verde1.3.png');"></div>
-                            <div class="image-item image-5" alt="" width="200" style="background-image: url('/img/verde1.4.jpg');"></div>
+                            <div class="image-item image-4" alt="" width="200" style="background-image: url('/img/amarillo1.4.jpg');"></div>
+                            <div class="image-item image-5" alt="" width="200" style="background-image: url('/img/amarillo1.5.jpg');"></div>
                         </div>
 
                         <blockquote class="pullquote">Como ves, reciclar en el contenedor amarillo es muy fácil y muy útil. Solo tienes que fijarte bien en el tipo de envase que tienes entre manos y depositarlo en el lugar adecuado. Así estarás contribuyendo a cuidar el planeta y a ahorrar energía y recursos. ¡Anímate a reciclar más y mejor!</blockquote>
@@ -195,13 +195,14 @@
     </div>
     <?php
     include("../menu/botonup.html");
-    include("../menu/encuesta.html");
+    
     include("../menu/footer.html");
     ?>
 
     <script src="/js/contverde.js"></script>
     <script src="/js/menu.js"></script>
     <script src="/js/boton_up.js"></script>
+    <script src="/js/scrollanimation.js"></script>
 </body>
 
 </html>

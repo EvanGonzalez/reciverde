@@ -9,7 +9,7 @@
     <script src="/js/jquery-3.5.1.min.js"></script>
     <script src="https://kit.fontawesome.com/cd33816f91.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/img/3_favICON-dark.svg" type="image/x-icon">
-
+    <script src="/js/scrollreveal.js"></script>
     <title>Contenedor orgánico</title>
 </head>
 
@@ -44,7 +44,7 @@
                     </header>
 
                     <section class="main-article">
-                       
+
                         <p>El contenedor marrón es el encargado de recoger los residuos orgánicos, es decir, todos los residuos de origen animal o vegetal que se generan en tu hogar, como restos de comida, cáscaras de fruta, servilletas usadas o flores marchitas. Estos residuos se transportan a una planta de compostaje, donde se transforman en compost, un abono natural y ecológico que se puede usar para fertilizar el suelo y las plantas.</p>
                         <p>El compostaje es un proceso natural que imita el ciclo de la vida, donde la materia orgánica se descompone con la ayuda de microorganismos y oxígeno. El resultado es un producto rico en nutrientes y humus, que mejora las propiedades físicas, químicas y biológicas del suelo. Además, el compostaje evita que los residuos orgánicos acaben en el vertedero, donde generan gases de efecto invernadero y contaminan el medio ambiente.</p>
 
@@ -58,13 +58,13 @@
 
                         <!-- horizontal -->
                         <div class="contenedorconten">
-                           
+
                             <div class="flip">
                                 <div class="front" style="background-image: url(/img/bio.svg)">
                                     <h1 class="text-shadow">Curiosidad #1</hi>
                                 </div>
                                 <div class="back">
-                    
+
                                     <p class="cardcontenedores">El color marrón del contenedor simboliza la tierra y el origen natural de los residuos que contiene.</p>
                                 </div>
                             </div>
@@ -73,7 +73,7 @@
                                     <h1 class="text-shadow">Curiosidad #2</hi>
                                 </div>
                                 <div class="back">
-                    
+
                                     <p class="cardcontenedores">El primer compost realizado por el ser humano fue sir Albert Howard, que preparaba su compost con una capa de material vegetal de 15 centímetros.</p>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@
                                     <h1 class="text-shadow">Curiosidad #3</hi>
                                 </div>
                                 <div class="back">
-                    
+
                                     <p class="cardcontenedores">El compost per se existe desde el nacimiento de las plantas verdes en la tierra. Cualquier vegetal que acabe en el suelo y se pudra con participación de oxígeno se transforma en compost.</p>
                                 </div>
                             </div>
@@ -92,7 +92,7 @@
                                     <h1 class="text-shadow">Curiosidad #4</hi>
                                 </div>
                                 <div class="back">
-                    
+
                                     <p class="cardcontenedores">El contenedor marrón también se llama contenedor orgánico o contenedor bio.</p>
                                 </div>
                             </div>
@@ -102,7 +102,7 @@
                                     <h1 class="text-shadow">Curiosidad #5</hi>
                                 </div>
                                 <div class="back">
-                    
+
                                     <p class="cardcontenedores">El compostaje también se puede hacer en casa o en el colegio, con un poco de espacio y unos sencillos pasos.</p>
                                 </div>
                             </div>
@@ -113,11 +113,91 @@
                         <!-- fin de contenedores -->
 
 
-                        
-                        <blockquote class="pullquote">"Esperamos que este artículo te haya servido para conocer mejor el contenedor marrón de reciclaje y sus beneficios para el medio ambiente y la sociedad. Recuerda que reciclar es un gesto sencillo que contribuye al desarrollo sostenible y al cuidado del planeta. ¡Anímate a usar el contenedor marrón y a hacer tu propio compost!"</blockquote>
-
 
                         
+                        <!-- inicio de composta -->
+                        <center>
+
+                            <h2 class="titulo-secundario"><span>Como</span>  realizar una composta casera para las plantas</h2>
+                        </center>
+                        <div class="contenedorcompost">
+
+                            <div class="carrusel">
+                                <div class="imagenes-transformables" style="background-image: url('/img/paso1.jpeg')">
+                                    <div class="fade">
+                                        <div class="border-text">
+                                        1.	Utiliza un tanque limpio sin agujeros.
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="imagenes-transformables" style="background-image: url('/img/paso2.jpeg')">
+
+
+                                    <div class="fade">
+                                        <a href="#"  onclick="return false" class="border-text">
+                                        2.	Agregar 2 o 3 libras de tierra negra. 
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="imagenes-transformables" style="background-image: url('/img/paso3.jpeg')">
+
+
+                                    <div class="fade">
+                                        <a href="#" onclick="return false" class="border-text">
+                                        3.	Se agrega 2kilos de cascara de plátanos u otro residuo orgánico.
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="imagenes-transformables" style="background-image: url('/img/paso4.jpeg')">
+
+
+                                    <div class="fade">
+                                        <a href="#" onclick="return false" class="border-text">
+                                        4.	Se procede a agregar 1 o 2 libra de tierra arriba de las cascaras de plátano.
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="imagenes-transformables" style="background-image: url('/img/paso5.jpeg')">
+
+
+                                    <div class="fade">
+                                        <a href="#" onclick="return false" class="border-text">
+                                        5.	Agrega el residuo del café utilizado y deposítalo en una bolsa y déjalo secar al sol para evitar hongos. Este se agrega dentro del tanque junto con la tierra anterior.
+                                        </a>
+                                    </div>
+                                </div>
+
+                                
+
+                                <div class="imagenes-transformables" style="background-image: url('/img/paso7.jpeg')">
+
+
+                                    <div class="fade">
+                                        <a href="#" onclick="return false" class="border-text">
+                                        6.	Se procede a tapar el tanque y dejarlo al sol. 
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="imagenes-transformables" style="background-image: url('/img/paso8.jpeg')">
+
+
+                                    <div class="fade">
+                                        <a href="#" onclick="return false" class="border-text">
+                                        7.	Uno o dos meses después puedes utilizarlo para abonar tus plantas. 
+                                        </a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- fin de composta -->
+
+                            <blockquote class="pullquote">"Esperamos que este artículo te haya servido para conocer mejor el contenedor marrón de reciclaje y sus beneficios para el medio ambiente y la sociedad. Recuerda que reciclar es un gesto sencillo que contribuye al desarrollo sostenible y al cuidado del planeta. ¡Anímate a usar el contenedor marrón y a hacer tu propio compost!"</blockquote>
                     </section>
                 </article>
             </div>
@@ -131,13 +211,12 @@
     </div>
     <?php
     include("../menu/botonup.html");
-    include("../menu/encuesta.html");
     include("../menu/footer.html");
     ?>
-
     <script src="/js/contverde.js"></script>
     <script src="/js/menu.js"></script>
     <script src="/js/boton_up.js"></script>
+    <script src="/js/scrollanimation.js"></script>
 </body>
 
 </html>

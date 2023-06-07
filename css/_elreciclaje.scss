@@ -31,6 +31,7 @@ $b-r: 5px;
 
 .card-content {
     padding: 3em 4em 2em;
+    text-align: justify;
 }
 
 h3 {
@@ -118,7 +119,6 @@ h3 {
 
 .perspective-line {
     height: 92px;
-    /*should be less than font-size to create space only for just 1 text line*/
     overflow: hidden;
     position: relative;
 }
@@ -133,22 +133,17 @@ h3 {
     text-align: center;
     margin: 0;
     height: 92px;
-    /*same height as of div to occupy full space by text*/
     line-height: 100px;
-    /*to create space between 2nd line of same div*/
+   
     transition: all 0.5s ease-in-out;
 }
-
-/* skew both x and y axis for every odd line and only y axis for even line.
-   Now skewing will cause the line size to be out of proportion. 
-   We need to fix this by downscaling the odd lines and upscaling the even lines.*/
 
 
 .perspective-text:hover p {
     transform: translate(0, -92px);
 }
 
-/*change it to .perspective-line:hover p{} for transition on single div on hover*/
+
 p {
     transition: all 0.5s ease-in-out;
 }

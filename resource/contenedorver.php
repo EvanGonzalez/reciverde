@@ -9,7 +9,7 @@
     <script src="/js/jquery-3.5.1.min.js"></script>
     <script src="https://kit.fontawesome.com/cd33816f91.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/img/3_favICON-dark.svg" type="image/x-icon">
-
+    <script src="/js/scrollreveal.js"></script>
     <title>Contenedor Verde</title>
 </head>
 
@@ -67,7 +67,7 @@
                         <p>Cristales de ventanas</p>
                         <p>Espejos</p>
                         <p>Ladrillos</p>
-                        <p>Lunas de coches</p>
+                        <p>Parabrisas</p>
                         <p>Piedras</p>
                         <p>Porcelanas</p>
                         <p>Tubos fluorescentes</p>
@@ -93,13 +93,14 @@
     </div>
     <?php
     include("../menu/botonup.html");
-    include("../menu/encuesta.html");
+    
     include("../menu/footer.html");
     ?>
 
     <script src="/js/contverde.js"></script>
     <script src="/js/menu.js"></script>
     <script src="/js/boton_up.js"></script>
+    <script src="/js/scrollanimation.js"></script>
 </body>
 
 </html>

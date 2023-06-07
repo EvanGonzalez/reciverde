@@ -802,6 +802,7 @@ div#inked-painted:hover {
 
 .card-content {
   padding: 3em 4em 2em;
+  text-align: justify;
 }
 
 h3 {
@@ -874,7 +875,6 @@ h3 {
 
 .perspective-line {
   height: 92px;
-  /*should be less than font-size to create space only for just 1 text line*/
   overflow: hidden;
   position: relative;
 }
@@ -889,20 +889,14 @@ h3 {
   text-align: center;
   margin: 0;
   height: 92px;
-  /*same height as of div to occupy full space by text*/
   line-height: 100px;
-  /*to create space between 2nd line of same div*/
   transition: all 0.5s ease-in-out;
 }
 
-/* skew both x and y axis for every odd line and only y axis for even line.
-   Now skewing will cause the line size to be out of proportion. 
-   We need to fix this by downscaling the odd lines and upscaling the even lines.*/
 .perspective-text:hover p {
   transform: translate(0, -92px);
 }
 
-/*change it to .perspective-line:hover p{} for transition on single div on hover*/
 p {
   transition: all 0.5s ease-in-out;
 }
@@ -1849,6 +1843,67 @@ p {
     display: none;
   }
 }
+.contenedorcompost {
+  padding: 0;
+  width: 100%;
+}
+
+.contenedorcompost .carrusel {
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+.imagenes-transformables {
+  height: 600px;
+  min-width: 1%;
+  width: 33.33%;
+  max-width: 50%;
+  transition: all 1s ease;
+  background-size: cover;
+  background-position: center center;
+}
+
+.imagenes-transformables:hover {
+  max-width: 80%;
+  min-width: 50%;
+  transition: min-width 1s ease;
+  -webkit-transition: min-width 1s ease;
+  -moz-transition: min-width 1s ease;
+  -ms-transition: min-width 1s ease;
+  -o-transition: min-width 1s ease;
+}
+
+.imagenes-transformables:hover .fade {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: auto;
+  height: 100%;
+  transition: background-color 0.5s ease;
+  padding: 1em;
+  display: flex;
+}
+
+.imagenes-transformables:hover .fade .border-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  transition: font-size 1s ease;
+}
+
+.imagenes-transformables .fade .border-text {
+  border: 1px solid white;
+  width: 100%;
+  height: 90%;
+  margin: 2px;
+  display: none;
+  font-family: sans-serif;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .contenedorverde {
   display: block;
   justify-content: center;
@@ -2761,11 +2816,25 @@ p {
   justify-content: center;
 }
 
-.seccion2 {
+.seccion1 {
+  height: 90vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 50vh;
+}
+
+.seccion2 {
+  flex-direction: row;
+  justify-content: center;
+  height: 60vh;
+  margin-bottom: 100px;
+}
+
+.seccion3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 100px;
 }
 
 .titulo-principal {
@@ -2826,12 +2895,18 @@ p {
   transform: scale(1.3);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
   .seccion {
     flex-direction: column;
   }
   .textoverde {
     width: 100%;
+  }
+  .seccion2 {
+    flex-direction: column;
+  }
+  .seccion1 {
+    flex-direction: column;
   }
 }
 #feedback-page {
@@ -2994,126 +3069,135 @@ input:focus, textarea:focus {
     padding-right: 3%;
   }
 }
-/* Utilities */
-.auto-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size, 14rem), 1fr));
-  grid-gap: var(--auto-grid-gap, 0);
-  padding: 0;
+.main2 {
+  width: 100%;
+  height: auto;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: pop;
+  padding: 50px;
 }
 
-.flow > * + * {
-  margin-top: var(--flow-space, 1em);
+.main2 .heading {
+  font-size: 25px;
+  margin-bottom: 80px;
+  position: relative;
 }
 
-/* Composition */
-.team {
-  --flow-space: 2em;
+.heading span {
+  color: rgb(0, 81, 255);
 }
 
-/* Blocks */
-.profile {
+.heading::after {
+  content: " ";
+  position: absolute;
+  width: 60%;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  background-color: rgb(0, 81, 255);
+}
+
+.containerequipo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.containerequipo .cardverde {
+  width: 350px;
+  height: 450px;
+  position: relative;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.37);
+  margin: 15px;
+}
+
+.cardverde::after {
+  content: " ";
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #39b54a;
+}
+
+.cardverde img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: fit;
+  transition: 0.6s;
+  box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.37);
+  z-index: 99;
+}
+
+.cardverde:hover img {
+  transform: scale(0.5) translateY(-120px);
+  border-radius: 10px;
+}
+
+.cardverde .details {
+  width: 100%;
+  height: 100%;
+  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  aspect-ratio: 1/1;
-  position: relative;
-  padding: 1.5rem;
-  color: #ffffff;
-  backface-visibility: hidden;
+  align-items: center;
+  padding-bottom: 40px;
+  transform: translateY(100%);
+  transition: 0.6s;
+}
+
+.cardverde:hover .details {
+  transform: translateY(0);
+}
+
+.details h3 {
+  font-size: 22px;
+  color: #8cc63f;
+}
+
+.details p {
+  font-size: calc(0.4rem + 1vw);
+  color: #000000;
+  margin-bottom: 7px;
+}
+
+.details .social-links {
+  display: flex;
+}
+
+.details .social-links a {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+  border-radius: 50%;
+  color: #333;
+  background-color: rgb(182, 182, 182);
   text-decoration: none;
-  overflow: hidden;
+  transition: 0.6s;
+  display: grid;
+  place-items: center;
+  font-size: 17px;
 }
 
-.profile::before,
-.profile::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  /*inset: 0;*/
-  top: 0;
-  left: 0;
-}
-
-.profile::before {
-  background: linear-gradient(to top, hsla(0, 0%, 0%, 0.79) 0%, hsla(0, 0%, 0%, 0.787) 7.8%, hsla(0, 0%, 0%, 0.779) 14.4%, hsla(0, 0%, 0%, 0.765) 20.2%, hsla(0, 0%, 0%, 0.744) 25.3%, hsla(0, 0%, 0%, 0.717) 29.9%, hsla(0, 0%, 0%, 0.683) 34.3%, hsla(0, 0%, 0%, 0.641) 38.7%, hsla(0, 0%, 0%, 0.592) 43.3%, hsla(0, 0%, 0%, 0.534) 48.4%, hsla(0, 0%, 0%, 0.468) 54.1%, hsla(0, 0%, 0%, 0.393) 60.6%, hsla(0, 0%, 0%, 0.31) 68.3%, hsla(0, 0%, 0%, 0.216) 77.3%, hsla(0, 0%, 0%, 0.113) 87.7%, hsla(0, 0%, 0%, 0) 100%);
-  transition: 300ms opacity linear;
-}
-
-.profile::after {
-  background: linear-gradient(45deg, hsla(5, 97%, 63%, 0.7) 0, hsla(5, 97%, 63%, 0) 100%);
-  opacity: 0;
-  transition: 300ms opacity linear;
-}
-
-.profile > * {
-  z-index: 1;
-}
-
-.profile img {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  z-index: -1;
-  object-fit: cover;
-  filter: grayscale(1);
-  transition: filter 200ms ease, transform 250ms linear;
-}
-
-.profile h2,
-.profile p {
-  transform: translateY(2ex);
-}
-
-.profile h2 {
-  font-size: 1.7rem;
-  line-height: 1.2;
-  font-weight: 900;
-  letter-spacing: 0.03ch;
-  transition: 300ms transform ease;
-}
-
-.profile p {
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.profile p {
-  opacity: 0;
-  transition: 300ms opacity linear, 300ms transform ease-in-out;
-}
-
-.profile:focus {
-  outline: 0.5rem solid white;
-  outline-offset: -0.5rem;
-}
-
-.profile:hover :is(h2, p),
-.profile:focus :is(h2, p) {
-  transform: none;
-}
-
-.profile:hover::after,
-.profile:focus::after,
-.profile:hover::before,
-.profile:focus::before {
-  opacity: 0.7;
-}
-
-.profile:hover p,
-.profile:focus p {
-  opacity: 1;
-  transition-delay: 200ms;
-}
-
-.profile:hover img,
-.profile:focus img {
-  filter: grayscale(0);
-  transform: scale(1.05) rotate(1deg);
+.details .social-links a:hover {
+  transform: rotate(360deg);
+  background-color: rgb(0, 81, 255);
+  color: #fff;
 }
 
 * {

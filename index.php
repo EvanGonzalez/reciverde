@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/principal.css">
     <link rel="shortcut icon" href="/img/3_favICON-dark.svg" type="image/x-icon">
-    
+    <script src="/js/scrollreveal.js"></script>
     <title>Inicio</title>
 </head>
 
@@ -23,6 +23,7 @@
     <script src="/js/menu.js"></script>
     <script src="/js/cards.js"></script>
     <script src="/js/boton_up.js"></script>
+    <script src="/js/scrollanimation.js"></script>
 </body>
 
 

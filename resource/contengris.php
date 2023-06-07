@@ -9,7 +9,7 @@
     <script src="/js/jquery-3.5.1.min.js"></script>
     <script src="https://kit.fontawesome.com/cd33816f91.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="/img/3_favICON-dark.svg" type="image/x-icon">
-
+    <script src="/js/scrollreveal.js"></script>
     <title>Contenedor restos</title>
 </head>
 
@@ -54,11 +54,11 @@
                             <div class="gallery-mask mask-off">
                                 <img class="mask-image" src="" alt="" width="200">
                             </div>
-                            <div class="image-item image-1" alt="" width="200" style="background-image: url('/img/verde1.0.jpg');"></div>
-                            <div class="image-item image-2" alt="" width="200" style="background-image: url('/img/verde1.1.jpg');"></div>
-                            <div class="image-item image-3" alt="" width="200" style="background-image: url('/img/verde1.2.jpg');"></div>
-                            <div class="image-item image-4" alt="" width="200" style="background-image: url('/img/verde1.3.png');"></div>
-                            <div class="image-item image-5" alt="" width="200" style="background-image: url('/img/verde1.4.jpg');"></div>
+                            <div class="image-item image-1" alt="" width="200" style="background-image: url('/img/gris1.0.png');"></div>
+                            <div class="image-item image-2" alt="" width="200" style="background-image: url('/img/girs1.2.jpg');"></div>
+                            <div class="image-item image-3" alt="" width="200" style="background-image: url('/img/gris1.3.jpg');"></div>
+                            <div class="image-item image-4" alt="" width="200" style="background-image: url('/img/gris1.4.jpg');"></div>
+                            <div class="image-item image-5" alt="" width="200" style="background-image: url('/img/gris1.5.jpg');"></div>
                         </div>
                         <h4> <strong>Estos son algunos ejemplos:</strong> </h4>
 
@@ -104,7 +104,7 @@
     ?>
     <?php
     include("../menu/botonup.html");
-    include("../menu/encuesta.html");
+    
     include("../menu/footer.html");
     ?>
 
@@ -112,6 +112,7 @@
     <script src="/js/menu.js"></script>
     <script src="/js/boton_up.js"></script>
     <script src="/js/testimonio.js"></script>
+    <script src="/js/scrollanimation.js"></script>
 </body>
 
 </html>
