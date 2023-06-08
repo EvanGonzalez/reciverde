@@ -126,6 +126,7 @@ body {
   position: relative;
 }
 
+
 .banner3 {
   background-image: url(/img/reciverdetierra.png);
   max-width: 100%;
@@ -158,16 +159,16 @@ body {
 .banner-text {
   padding-top: 100px;
   margin-left: 50px;
-  font-size: calc(0.4rem + 0.9vw);
+  font-size: calc(0.1rem + 1vw);
 }
 
 
 
 
 
-@media (min-width: 200rem) {
+@media (max-width: 1230px) {
   .banner-text {
-    font-size: 3rem;
+    font-size: calc(0.6rem + 1vw);
   }
 
   

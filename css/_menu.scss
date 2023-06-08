@@ -37,7 +37,7 @@ nav ul {
 
 
 li a {
-    font-size: calc(0.2rem + 1vw);
+    font-size: calc(0.4rem + 1vw);
     cursor: pointer;
     transition: 0.5s;
     color: rgb(0, 0, 0);
@@ -99,7 +99,7 @@ li a:hover {
 
     li a {
         color: rgba(12, 11, 11, 0.836);
-        font-size: calc(0.5rem + 1vw);
+        font-size: calc(0.6rem + 2vw);
     }
 
     li {

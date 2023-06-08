@@ -34,7 +34,7 @@ nav ul {
 }
 
 li a {
-  font-size: calc(0.2rem + 1vw);
+  font-size: calc(0.4rem + 1vw);
   cursor: pointer;
   transition: 0.5s;
   color: rgb(0, 0, 0);
@@ -87,7 +87,7 @@ li a:hover {
   }
   li a {
     color: rgba(12, 11, 11, 0.836);
-    font-size: calc(0.5rem + 1vw);
+    font-size: calc(0.6rem + 2vw);
   }
   li {
     text-align: center;
@@ -820,7 +820,6 @@ h3 {
   background: #8dc26f;
   color: #fff;
   text-align: center;
-  width: 40%;
   padding: 0 25px;
   height: 50px;
   font-size: calc(0.3rem + 1vw);
@@ -2827,7 +2826,7 @@ p {
   flex-direction: row;
   justify-content: center;
   height: 60vh;
-  margin-bottom: 100px;
+  margin-bottom: 50vh;
 }
 
 .seccion3 {
@@ -3111,8 +3110,8 @@ input:focus, textarea:focus {
 }
 
 .containerequipo .cardverde {
-  width: 350px;
-  height: 450px;
+  width: 430px;
+  height: 470px;
   position: relative;
   border-radius: 10px;
   background-color: #fff;
@@ -3325,12 +3324,12 @@ body {
 .banner-text {
   padding-top: 100px;
   margin-left: 50px;
-  font-size: calc(0.4rem + 0.9vw);
+  font-size: calc(0.1rem + 1vw);
 }
 
-@media (min-width: 200rem) {
+@media (max-width: 1230px) {
   .banner-text {
-    font-size: 3rem;
+    font-size: calc(0.6rem + 1vw);
   }
 }
 .banner-text .titulobanner1 {
