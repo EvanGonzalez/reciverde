@@ -3324,12 +3324,12 @@ body {
 .banner-text {
   padding-top: 100px;
   margin-left: 50px;
-  font-size: calc(0.1rem + 1vw);
+  font-size: calc(0.1rem + 0.8vw);
 }
 
 @media (max-width: 1230px) {
   .banner-text {
-    font-size: calc(0.6rem + 1vw);
+    font-size: calc(0.5rem + 0.39vw);
   }
 }
 .banner-text .titulobanner1 {
