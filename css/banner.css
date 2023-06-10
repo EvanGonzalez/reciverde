@@ -69,7 +69,13 @@
 
 @media (max-width: 1230px) {
   .banner-text {
-    font-size: calc(0.5rem + 0.39vw);
+    font-size: calc(1rem + 2vw);
+    color: #003333;
+    -webkit-text-stroke: 0.1px #ffffff;
+  }
+
+  #textobanner {
+    font-size: calc(1rem + 2vw);
   }
 }
 

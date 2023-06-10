@@ -3170,9 +3170,9 @@ body {
 }
 .boton-flotante {
   position: fixed;
-  width: 7.5rem;
+  width: 8.5rem;
   height: 5.4rem;
-  bottom: 4rem;
+  bottom: 9rem;
   /* Ajusta la posición vertical */
   left: 20px;
   /* Ajusta la posición horizontal */

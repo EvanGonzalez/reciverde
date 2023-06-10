@@ -16,6 +16,7 @@
 <body>
     <?php
     include("../menu/menuprincipal.html");
+    include("./menu/encuesta.html");
     include("../inicio/estructurareciclaje.html");
     include("../menu/botonup.html");
     
