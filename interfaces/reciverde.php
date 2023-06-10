@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/principal.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-
+    <link rel="stylesheet" href="/css/formulario.css">
     <link rel="shortcut icon" href="/img/3_favICON-dark.svg" type="image/x-icon">
     <script src="/js/scrollreveal.js"></script>
     <title>ReciVerde</title>
