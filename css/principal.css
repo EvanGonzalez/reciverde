@@ -2826,7 +2826,7 @@ p {
   flex-direction: row;
   justify-content: center;
   height: 60vh;
-  margin-bottom: 50vh;
+  margin-bottom: 80vh;
 }
 
 .seccion3 {
@@ -2916,7 +2916,7 @@ p {
   width: 100%;
   float: left;
   padding-top: 0px;
-  margin-bottom: 90vh;
+  margin-bottom: 80vh;
 }
 
 #form-div {
